@@ -19,10 +19,7 @@ export default {
       exclude: 'node_modules/**' // only transpile our source code
     })
   ],
-  external: [
-    'firebase',
-    'firebase/firestore'
-  ],
+  external: [ ],
   onwarn(warning) {
     logger.warn(warning.message, warning);
   }
