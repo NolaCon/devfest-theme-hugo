@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Ensure static folder is up to date
 
 on:
   push:
