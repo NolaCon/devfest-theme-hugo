@@ -26,8 +26,10 @@ jobs:
 #       - run: npm ci
       - name: Build the new static files
         run: npm run build --if-present
-#       - run: npm test
+      - name: Do we need to update static?
+        run: echo "STATUS_LINECOUNT=$(git status static|wc -l)" >> $GITHUB_ENV
       - name: Commit new static files
+        if: ${{ env.STATUS_LINECOUNT > 5 }}
         run: |
           git config --global user.name 'Github Actions'
           git config --global user.email 'mnestor@users.noreply.github.com'
