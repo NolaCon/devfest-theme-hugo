@@ -21,7 +21,16 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install --with=dev
+      - name: Install npm packages including dev
+        run: npm install --with=dev
 #       - run: npm ci
-      - run: npm run build --if-present
+      - name: Build the new static files
+        run: npm run build --if-present
 #       - run: npm test
+      - name: Commit new static files
+        run: |
+          git config --global user.name 'Github Actions'
+          git config --global user.email 'mnestor@users.noreply.github.com'
+          git add static
+          git commit -m "Ensuring static files are updated"
+          git push
