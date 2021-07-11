@@ -1,0 +1,6 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{ $site := .Site }}
+<section class="sponsor">
+	{{ range $site.Data.sponsors }}{{ partial "sponsor.html" . }}
+	{{ end }}
+</section>
