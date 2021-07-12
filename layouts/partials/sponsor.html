@@ -1,7 +1,3 @@
-{{- $photo := relURL (path.Join "images" "sponsors" .image) }}
-
-
 <div class="label">
-	{{ .title }}
-	<a target="_blank" rel="{{ .title }}" href="{{ .url }}">{{ partial "picture" (dict "img" $photo "class" "photo" ) }}</a>
+	<a target="_blank" rel="{{ .name }}" href="{{ .url }}">{{ partial "picture" (dict "img" .img  "alt" .name "class" "sponsor") }}</a>
 </div>
