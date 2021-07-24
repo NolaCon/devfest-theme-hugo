@@ -21,7 +21,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-env": "^7.14.8",
     "@types/js-yaml": "^4.0.2",
     "cssnano": "^5.0.7",
     "glob": "^7.1.7",
