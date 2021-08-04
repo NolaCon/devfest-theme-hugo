@@ -33,7 +33,7 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-uglify": "^6.0.4",
-    "sass": "^1.36.0",
+    "sass": "^1.37.5",
     "sass-mq": "^5.0.1",
     "stylelint": "^13.13.1"
   }
