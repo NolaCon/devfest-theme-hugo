@@ -19,7 +19,7 @@
     "core-js": "^3.17.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.4",
+    "@babel/core": "^7.15.5",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.15.4",
     "@types/js-yaml": "^4.0.3",
