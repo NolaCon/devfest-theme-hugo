@@ -16,7 +16,7 @@
     "build": "run-p build:*"
   },
   "dependencies": {
-    "core-js": "^3.18.2"
+    "core-js": "^3.19.3"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
