@@ -5,11 +5,12 @@
 			<div class="share">
 				<div class="header">{{ i18n "footer_share" }}</div>
 				<ul class="social-list">
+					{{ $siteUrl := .Site.BaseURL }}
 					{{ range .Site.Data.footer.share }}
 					<li>
-						{{ $url := .Permalink | relLangURL }}
-						{{ partial "social-sharer.html" (dict "context" . "url" $url "name" .name) }}
+						{{ partial "social-sharer.html" (dict "context" . "url" $siteUrl "name" .name) }}
 						{{ end }}
+					</li>
 				</ul>
 			</div>
 			<div class="blog">
@@ -22,7 +23,7 @@
 				<ul class="social-list">
 					{{ range .Site.Data.footer.follow }}
 					<li>
-						<a href="{{ .RelPermalink }}" class="social" rel="noopener noreferrer" target="_blank">
+						<a href="{{ .url }}" class="social" rel="noopener noreferrer" target="_blank">
 							{{ partial "icon.html" .name }}
 							{{ .name }}
 						</a>
