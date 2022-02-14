@@ -441,3 +441,9 @@ just classique markdown file, this the `menu.main.weight: 80` to be displayed in
 ## License
 
 MIT, see [LICENSE](https://github.com/jweslley/hugo-conference/blob/master/LICENSE).
+
+
+## Mike snips
+
+Tags: `grep "\.tag-" themes/nolacon-theme-hugo/src/styles/partials/_tags.scss |sed 's/\.tag-//g' |sed 's/ .*//g'`
+Types: `grep "\.type-" themes/nolacon-theme-hugo/src/styles/partials/_type.scss |sed 's/\.type-//g' |sed 's/ .*//g'`

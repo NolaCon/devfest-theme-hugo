@@ -4,7 +4,7 @@
   max-width: var(--block-text-max-width);
 
   .complexity::before {
-    content: 'Niveau : ';
+    content: 'Difficulty : ';
   }
 
   .type::before {
