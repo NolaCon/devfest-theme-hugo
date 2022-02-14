@@ -1,6 +1,7 @@
 name: Ensure static folder is up to date
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
